@@ -155,12 +155,9 @@ li:hover .sub {
 
 }
 
-/*div {*/
-    /*counter-reset: revert;*/
-/*}*/
+div {
+    display: block;
+}
 
 
-
-
-
-
+git commit --amend --date="Mon Jul 11 12:00:00 2016 +0900"
