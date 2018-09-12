@@ -1,0 +1,161 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    height: 350px;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: block;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: dodgerblue;
+}
+
+.list {
+    height: 0;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+input:checked ~ .list {
+    height: 300px;
+}
+
+.list li{
+    line-height: 50px;
+    background-color: black;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.sub li {
+    background-color: silver;
+    margin-bottom: 0;
+}
+
+.list a {
+    color: white;
+    text-decoration: none;
+}
+
+.sub a {
+    color: black;
+    text-decoration: none;
+}
+
+.sub {
+    margin-top: 1px;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+li:hover {
+    background-color: dodgerblue;
+}
+
+li:hover .sub {
+    background-color: silver;
+    height: 100px;
+}
+
+
+
+
+
+
+/*flex animation*/
+.container {
+    width: 830px;
+    display: flex;
+    /*background-color: mediumpurple;*/
+    margin: 0 auto 50px auto;
+    border-radius: 25px;
+    box-shadow: 4px 4px 15px black
+}
+
+.box {
+    display: inline-block;
+    background-color: silver;
+    height: 600px;
+    border: solid 2px black;
+    border-radius: 25px;
+    padding: 30px 60px 10px 30px;
+    text-align: left;
+    font-size: 18px;
+
+    flex: 1 0 150px;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+
+.box:hover {
+    flex-basis: 200px;
+    color: #fff;
+}
+
+.box:first-child:hover,
+.box:last-child:hover {
+    background-color: red;
+}
+
+.box:nth-child(n+2):nth-child(-n+3):hover {
+    background-color: dodgerblue;
+}
+
+.a,
+.b,
+.c {
+    margin-right: -30px;
+}
+
+.box div {
+    margin-top: 10px;
+}
+
+
+/*Media Query*/
+
+@media only screen and (min-width: 761px) {
+    input,
+    label {
+        display: none;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: inherit;
+    }
+
+    .list > li {
+        width: 20%;
+        height: 50px;
+        margin: 0 5px 0 5px;
+    }
+
+    nav {
+        height: 200px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
