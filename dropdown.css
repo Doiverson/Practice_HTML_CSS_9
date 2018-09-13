@@ -21,6 +21,7 @@ label {
 }
 
 .list {
+    /*display: none;*/
     height: 0;
     overflow: hidden;
     transition: all 1s ease;
@@ -28,6 +29,7 @@ label {
 
 input:checked ~ .list {
     height: 300px;
+    /*display: block;*/
 }
 
 .list li{
@@ -77,7 +79,6 @@ li:hover .sub {
 .container {
     width: 830px;
     display: flex;
-    /*background-color: mediumpurple;*/
     margin: 0 auto 50px auto;
     border-radius: 25px;
     box-shadow: 4px 4px 15px black
@@ -98,6 +99,12 @@ li:hover .sub {
     transition: all 1s ease-in-out;
 }
 
+.a,
+.b,
+.c {
+    margin-right: -30px;
+}
+
 .box:hover {
     flex-basis: 200px;
     color: #fff;
@@ -112,15 +119,10 @@ li:hover .sub {
     background-color: dodgerblue;
 }
 
-.a,
-.b,
-.c {
-    margin-right: -30px;
-}
-
 .box div {
     margin-top: 10px;
 }
+
 
 
 /*Media Query*/
