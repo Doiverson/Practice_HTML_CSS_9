@@ -94,7 +94,7 @@ li:hover .sub {
     text-align: left;
     font-size: 18px;
 
-    flex: 1 0 150px;
+    flex: 0 0 150px;
     overflow: hidden;
     transition: all 1s ease-in-out;
 }
