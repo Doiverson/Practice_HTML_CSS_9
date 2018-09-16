@@ -155,9 +155,9 @@ li:hover .sub {
 
 }
 
-div {
-    counter-reset: revert;
-}
+/*div {*/
+    /*counter-reset: revert;*/
+/*}*/
 
 
 
